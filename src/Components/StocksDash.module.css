@@ -1,8 +1,46 @@
-.container{
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    background-color: #f5f5f5;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.chartContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.chartContainer .plotly {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.chartContainer {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .chartContainer {
+        margin-top: 15px;
+    }
 }
